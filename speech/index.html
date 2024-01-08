@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: antiquewhite;
+      }
+      input {
+        color: blue;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        margin: 10px 0px 0px 40px;
+      }
+      button {
+        background-color: aqua;
+        position: relative;
+        left: 100px;
+      }
+      h1,h2 {
+        font-family: Verdana Pro Black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Text to Speech</h1>
+    <h2>in javascript</h2>
+    <input type="text" /><br /><br />
+    <button>speak</button>
+
+    <script>
+      button = document.querySelector("button");
+      text = document.querySelector("input");
+      button.addEventListener("click", () => {
+        let utterance = new SpeechSynthesisUtterance(text.value);
+        utterance.pitch=1;
+        utterance.rate=1;
+        utterance.volume=1;
+        speechSynthesis.speak(utterance);
+      });
+    </script>
+  </body>
+</html>
