@@ -1,0 +1,85 @@
+/* 95% of storage used … If you run out, you won't have enough storage to create, edit, and upload files. Get 100 GB of storage for ₹130.00 ₹35.00/month for 3 months. */
+/* style.css */
+body{
+    background-color: #eeb3b3;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+h1{
+    
+   text-align: center;
+   background-color: aqua;
+   border-radius: 10px;
+   width: 300px;
+   position: absolute;
+   top: 100px;
+   left: 40%;
+
+}
+h1:hover{
+    box-shadow: 0px 1px 4px 0px;
+  
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: white;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+ 
+}
+
+.result{
+    background-color: #413e3e;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.row{
+   
+    justify-content: space-around;
+    gap: 1px;
+   
+}
+
+ .row button{
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px 10px 12px;
+    border: none;
+    border-radius: 50%;
+    font-size: px;
+    box-shadow: 0px 1px 4px 0px ;
+    text-align: center;
+    transition: 0.2s all linear; 
+} 
+
+.row button:hover{
+    background-color: #e0e0e0;
+}
+
+.row button:active{
+    background-color: #eeb3b3;
+}
+
+#equal{
+    width: 150px;
+}
+
+#dot{
+    font-weight: 600;
+}
